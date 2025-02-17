@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobsPath</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Css-link -->
+    <link rel="stylesheet" href="./css/jobspath.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="bottom_navbar">
+                <div class="container">
+                    <div class="bottom_navbar_main">
+                        <div class="logo_all">
+                            <div class="logo">
+                                <a href="./index.html"><img src="./images/logo3.png" alt="logo"></a>
+                            </div>
+
+                            <div class="toggler" onclick="showSidebar()">
+                                <i class="fa-solid fa-bars"></i>
+
+                            </div>
+
+                        </div>
+                        <div class="navlist">
+                            <ul class="mainmenu hidebutton">
+                                <li class="hidebutton"><a href="./index.html">Home</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a class="active" href="./jobspath.html">Jobs</a></li>
+                                <li><a href="#">Blogs</a></li>
+
+                                <!-- <li class="toggler" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
+                            </ul>
+
+                            <ul class="slidebar">
+                                <li class="cross" onclick="hidesidebar()"><a href="#"> <i
+                                            class="fa-solid fa-circle-xmark"></i></a></li>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="./jobspath.html">Jobs</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Sign in</a></li>
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- -------------------------banner------------ -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">Job Category</h1>
+            </div>
+        </div>
+
+    </section>
+    <!--------------------- banner-end-------------------------- -->
+
+    <main>
+        <section class="fliter">
+            <div class="container">
+                <div class="row">
+                    <div class="filter_main">
+                        <div class="fill">
+                            <figure>
+
+                                <img src="./images/filter.png" alt="">
+
+
+                            </figure>
+                            <p>Filter</p>
+                        </div>
+
+                        <div class="select-box">
+                            <select id="mySelect">
+                                <option value="" disabled selected>Category</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                                <option value="6">Option 6</option>
+                                <option value="7">Option 7</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="path-main">
+
+
+                        <div class="card card1" data-aos="fade-right" data-aos-duration="3000">
+                            <figure>
+                               <a href="#"><img src="./images/path1.2.png" alt="pathpic"></a> 
+                            </figure>
+                            <div class="txt">
+                               <a href="#"><p>Customer Support Car</p></a>
+                                <p>52 Jobs Available</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card card2" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                              <a href="#"><img src="./images/path2.2.png" alt="pathpic"></a>  
+                            </figure>
+                            <div class="txt">
+                                <a href="#"><p>Design & Development</p></a>
+                                <p>12 Jobs Available</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card card3" data-aos="flip-up" data-aos-duration="2000">
+                            <figure>
+                                <a href="#"> <img src="./images/path3.2.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Marketing & Managment</p></a>
+                                <p>26 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card4" data-aos="fade-left" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path4.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Human Resource</p></a>
+                                <p>12 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card5" data-aos="fade-right" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"><img src="./images/path5.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Project Managment</p></a>
+                                <p>26 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card6" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path6.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Data Analysis</p></a>
+                                <p>54 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card7" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path7.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Cyber Security</p></a>
+                                <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card8" data-aos="fade-left" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path8.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Consulting Service</p></a>
+                                 <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card9" data-aos="fade-right" data-aos-duration="3000">
+                            <figure>
+                                <a href="#">  <img src="./images/path5.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Graphics Design</p></a>
+                                <p>26 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card10" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path6.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Web Design</p></a>
+                                <p>54 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card11" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path7.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>A-Inteligence</p></a>
+                                <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card12" data-aos="fade-left" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path8.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#">  <p>Video Editing</p></a>
+                                <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+                        <div class="card card13" data-aos="fade-right" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path5.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Finance & Banking</p></a>
+                                <p>26 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card14" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path6.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Automation</p></a>
+                                <p>54 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card15" data-aos="flip-up" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path7.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#"> <p>Animation & VFX</p></a>
+                                <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+
+                        <div class="card card16" data-aos="fade-left" data-aos-duration="3000">
+                            <figure>
+                                <a href="#"> <img src="./images/path8.1.png" alt="pathpic"></a>
+                            </figure>
+                            <div class="txt">
+                                <a href="#">  <p>Consulting Service</p></a>
+                                <p>22 Jobs Available</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="upper_footer">
+                    <div class="left_part">
+                        <figure>
+                           <a href="./jobspath.html"><img src="./images/footerlogo.png" alt="logo"></a> 
+
+                        </figure>
+                        <div class="icon">
+                           <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+                           <a href="wwww.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                           <a href="wwww.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="middle_part">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                       
+
+                            <div class="call">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+541-564-009">Call Us: 541-564-009</a>
+                            </div>
+
+                            <div class="email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:adjob@gmail.co.in">Email:adjob@gmail.co.in</a>
+                            </div>
+                     
+                        
+
+                    </div>
+                    <div class="rightpart">
+                        <input type="text" name="name" id="name" placeholder="login for Newsletter">
+                        <i class="fa-solid fa-paper-plane" data-aos="fade-down-left"data-aos-duration="2000"></i>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="./js/index2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
