@@ -13,9 +13,17 @@
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;  /* hides horizontal overflow */
+   
+    
+    
+    
   
 }
+html,body{
+    overflow-x: hidden;
+
+}
+
 img{
     width: 100%;
     height: 100%;
@@ -338,6 +346,10 @@ nav{
 .path-main .card .txt a:hover{
     color: var(--primary-color);
 }
+.path-main .card3 .txt a{
+    font-size: 1.6rem;
+    
+}
 
 /* footer */
 footer{
@@ -353,7 +365,7 @@ footer{
     gap: 50px ;
 }
 .upper_footer .left_part{
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -386,7 +398,7 @@ footer{
     margin: 0 15px;
 }
 .upper_footer .middle_part {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -451,7 +463,7 @@ footer{
     color: white;
  }
  .rightpart{
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -502,7 +514,7 @@ footer{
    
 
     html{
-        font-size: 50%;
+        font-size: 55%;
        }
   
 .bottom_navbar_main .navlist .mainmenu{
@@ -527,6 +539,16 @@ display: block;
 .upper_footer .middle_part{
     padding: 8px;
 }
+.rightpart{
+   
+    justify-content: start;
+    align-items:start;
+   
+ }
+ .fliter{
+
+    padding-top: 80px;
+}
 
 
 
@@ -541,9 +563,11 @@ display: block;
    
 }
 @media (max-width: 767px) {
+   
+    
 
     html{
-        font-size: 45%;
+        font-size: 50%;
     }
 
 .filter_main{
@@ -561,6 +585,10 @@ display: block;
     padding: 80px 25px 12px 25px;
   
 }
+.fliter{
+
+    padding-top: 70px;
+}
 
 
 
@@ -574,46 +602,44 @@ display: block;
 
 
 
-.rightpart{
-   
-    justify-content: start;
-    align-items:start;
-   
- }
+
 }
 
 @media (max-width: 595px) {
+    .fliter{
+
+        padding-top: 60px;
+    }
     html{
-        font-size: 40%;
+        font-size: 45%;
     }
     .upper_footer .left_part{
         padding: 8px;
 
     }
+    .bottom_navbar_main .navlist .slidebar li a{
+       
+        padding: 10px;
+      
+      }
 
-    .upper_footer .middle_part {
-        max-width: 300px;
+    /* .upper_footer .middle_part {
+        max-width: 350px;
       
     }
     .upper_footer .rightpart {
-        max-width: 300px;
+        max-width: 350px;
       
-    }
+    } */
 
 }
-@media (max-width: 595px) {
+@media (max-width: 320px) {
     html{
-        font-size: 37%;
+        font-size: 43%;
     }
  
 
-    .upper_footer .middle_part {
-        max-width: 170px;
-      
-    }
-    .upper_footer .rightpart {
-        max-width: 170px;
-      
-    }
+   
+    
 
 }

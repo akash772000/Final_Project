@@ -442,7 +442,8 @@ display: inline-block;
 
 .path{
     background-color: #F6F7FC;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 28px;
 }
 .path .path-main{
     display: flex;
@@ -470,13 +471,13 @@ display: inline-block;
     -o-border-radius: 15px;
     background-color: #ffffff;
 }
-.path .path-main .card .txt p:nth-child(1){
+/* .path .path-main .card .txt p:nth-child(1){
     font-size: 1.8rem;
     font-weight: 600;
 
     margin-bottom: 10px;
 
-}
+} */
 .path .path-main .card .txt p:nth-child(2){
     font-size: 1.4rem;
     font-weight: 500;
@@ -499,6 +500,27 @@ display: inline-block;
  -moz-border-radius: 50%;
  -ms-border-radius: 50%;
  -o-border-radius: 50%;
+}
+
+.path .path-main .card .txt a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+
+    margin-bottom: 10px;
+
+}
+.path .path-main .card3 .txt a{
+    font-size: 1.6rem;
+    
+}
+.path-main .card figure a:hover{
+    cursor: pointer;
+
+}
+
+.path-main .card .txt a:hover{
+    color: var(--primary-color);
 }
 
 
