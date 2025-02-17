@@ -11,10 +11,14 @@
    
    
   }
+  html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
+    
 }
 h1{
     font-size: 5.0rem;
