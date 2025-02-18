@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobsPath</title>
+    <!-- fabiconlink -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fabicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fabicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fabicon/favicon-16x16.png">
+    <link rel="manifest" href="./fabicon/site.webmanifest">
+
+   
+
+
+    <!-- fabicon link -->
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Css-link -->
+    <link rel="stylesheet" href="./css/joblisting.css">
+
+</head>
+
+<body>
+    <!--------------------------------------------------- header---------------------start------------ -->
+
+    <header>
+        <nav>
+            <div class="bottom_navbar">
+                <div class="container">
+                    <div class="bottom_navbar_main">
+                        <div class="logo_all">
+                            <div class="logo">
+                                <a href="./index.html"><img src="./images/logo3.png" alt="logo"></a>
+                            </div>
+
+                            <div class="toggler" onclick="showSidebar()">
+                                <i class="fa-solid fa-bars"></i>
+
+                            </div>
+
+                        </div>
+                        <div class="navlist">
+                            <ul class="mainmenu hidebutton">
+                                <li class="hidebutton"><a href="./index.html">Home</a></li>
+                                <li><a href="./jobspath.html">Categories</a></li>
+                                <li><a class="active" href="./joblisting.html">Jobs</a></li>
+                                <li><a href="#">Blogs</a></li>
+
+                                <!-- <li class="toggler" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
+                            </ul>
+
+                            <ul class="slidebar">
+                                <li class="cross" onclick="hidesidebar()"><a href="#"> <i
+                                            class="fa-solid fa-circle-xmark"></i></a></li>
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="./jobspath.html">Categories</a></li>
+                                <li><a class="active"  href="./joblisting.html">Jobs</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Sign in</a></li>
+                            </ul>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!---------------------------- header------------------------------------------End----------------------------------- -->
+
+    <!-- -------------------------banner------------ -->
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2500">Job Category</h1>
+            </div>
+        </div>
+
+    </section>
+    <!--------------------- banner-end-------------------------- -->
+
+    <!-- main -->
+
+    <main>
+        <section class="fliter common-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="filter_main">
+                        <div class="fill">
+                            <figure>
+                                <img src="./images/filter.png" alt="">
+                            </figure>
+                            <p>Filter</p>
+                        </div>
+
+                        <div class="select-box">
+                            <select id="mySelect">
+                                <option value="" disabled selected>Category</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                                <option value="6">Option 6</option>
+                                <option value="7">Option 7</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="jobcard_main">
+
+                        <div class="jobcard jobcard1">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 6 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 52000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>20 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+    
+                        <div class="jobcard jobcard2">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Web Development</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 3 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 22000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+    
+                        <div class="jobcard jobcard3">
+                            <div class="top_heading">
+                                <p>Ui/Ux Designer</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 2 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 15000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard4">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Frontend Developers</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 1.5 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 20000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>20 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard5">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Digital Marketing</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 3 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 22000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+    
+
+                        <div class="jobcard jobcard6">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 2 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 15000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+    
+
+                        <div class="jobcard jobcard7">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 6 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 52000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>20 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard8">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 3 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 22000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard9">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 2 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 15000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard10">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 1.5 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 20000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>20 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard11">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Mern Stack</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 3 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 15000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>22 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="jobcard jobcard12">
+                            <div class="top_heading">
+                                <p>Rudolph Technology Pvt Ltd</p>
+                            </div>
+                            <div class="bottom-txt">
+                                <p>Project co-odinator</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at </p>
+    
+                                <div class="jd">
+                                    <p>Exp - 2 yrs</p>
+                                    <p>Full time</p>
+                                    <p>Salary - 15000/mo</p>
+                                </div>
+                                <div class="apply">
+                                    <a class="button_apply02" href="#">Apply</a>
+                                    <p>12 days left to apply</p>
+                                </div>
+                            </div>   
+                        </div>
+
+                       
+    
+    
+
+    
+    
+    
+                        
+                    </div>
+
+                    <div class="btn-pages">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- main-end -->
+
+
+
+
+        <!-- footer start -->
+
+
+
+        <footer>
+            <div class="top">
+            <div class="container">
+                <div class="row">
+    
+    
+    
+                    <div class="upper_footer">
+                        <div class="left_part">
+                            <figure>
+                               <a href="./jobspath.html"><img src="./images/footerlogo.png" alt="logo"></a> 
+    
+                            </figure>
+                            <div class="icon">
+                               <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a> 
+                               <a href="wwww.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                               <a href="wwww.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+    
+                        </div>
+    
+                        <div class="middle_part">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./jobspath.html">Categories</a></li>
+                                <li><a href="./joblisting.html">Jobs</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                           
+    
+                                <div class="call">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:+541-564-009">Call Us: 541-564-009</a>
+                                </div>
+    
+                                <div class="email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:adjob@gmail.co.in">Email:adjob@gmail.co.in</a>
+                                </div>
+                         
+                            
+    
+                        </div>
+                        <div class="rightpart">
+                            <input type="text" name="name" id="name" placeholder="login for Newsletter">
+                            <i class="fa-solid fa-paper-plane" ></i>
+                        </div>
+    
+                    </div>
+
+                    
+    
+    
+    
+                </div>
+    
+            </div>
+            <div class="lower-footer">
+                <p>Copyright 2022 AdJob. All rights reserved.</p>
+            </div>
+    
+    
+    
+        </footer>
+    
+
+    <script src="./js/index3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

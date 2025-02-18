@@ -11,10 +11,10 @@
    
    
   }
-  html,body{
+html,body{
     overflow-x: hidden;
     overflow-y: auto;
-  }
+ }
 
 html{
     font-size: 62.5%;
@@ -53,8 +53,9 @@ h4{
     /* display: block; */
 }
 
+
 .button_apply02{
-    padding: 8px 30px 5px 30px;
+    padding: 8px 30px 8px 30px;
     font-size: 1.2rem;
     color: #FFFFFF;
     background-color: var(--primary-color);
@@ -120,10 +121,14 @@ section,.row{
     align-items: center;
 }
 .container{
-    max-width: 1245px;
+    max-width: 1250px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+}
+.common-padding{
+    padding:100px 0;
+    
 }
 
 
@@ -263,6 +268,8 @@ nav{
     background-color: rgba(135, 206, 235, 0.2); /* Light sky blue overlay effect */
     padding: 10px 20px;
     border-radius: 5px; /* Optional: Smooth corners */
+    background-color: rgb(97, 97, 97);
+   
 
 }
 .bottom_navbar_main .navlist .mainmenu .toggler i{
@@ -311,8 +318,9 @@ nav{
 }
 .bottom_navbar_main .navlist .slidebar li a{
     font-size: 1.8rem;
-    color: white;
+    color: rgb(147, 143, 143);
     padding: 10px 20px;
+    font-weight: 700;
 
    
   
@@ -412,6 +420,18 @@ nav{
 display: inline-block;
 
 }
+.banner .search-container form .btn a:hover{
+    
+    /* border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgb(184, 184, 184); */
+    background-color: #0080ff;
+
+    color: #000000;
+    
+
+}
 
 
 /* ----------------------MNC--------------- */
@@ -446,8 +466,11 @@ display: inline-block;
 
 .path{
     background-color: #F6F7FC;
-    padding-top: 100px;
-    padding-bottom: 28px;
+    padding: 100px 0;
+    /* padding-bottom: 28px; */
+}
+.path .row{
+    margin: 0 -15px;
 }
 .path .path-main{
     display: flex;
@@ -526,6 +549,121 @@ display: inline-block;
 .path-main .card .txt a:hover{
     color: var(--primary-color);
 }
+
+
+/* <!-- jobs-of day --> */
+
+
+.jobs-off-day .container .row{
+    margin: 0 -15px;
+}
+.jobs-off-day .heading{
+    margin-bottom: 25px;
+}
+.jobs-off-day .jobcard_main{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+    width: 100%;
+}
+.jobs-off-day .jobcard_main .jobcard{
+    max-width: 376px;
+    width: 100%;
+    background-color: #F6F7FC;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* margin-bottom:50px ; */
+    
+}
+.jobs-off-day .jobcard_main .jobcard:hover{
+    box-shadow: 0px 0px 15px 0px rgb(87, 86, 86);
+    transform: scaleY(1.1);
+    cursor: pointer;
+    -webkit-transform: scaleY(1.1);
+    -moz-transform: scaleY(1.1);
+    -ms-transform: scaleY(1.1);
+    -o-transform: scaleY(1.1);
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt .apply a:hover{
+    background-color: #0080ff;
+
+    color: #000000;
+}
+
+
+.jobs-off-day .jobcard_main .jobcard .top_heading {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 11px 0;
+    border-bottom: 1px solid #6C6D6F;
+
+
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt{
+    padding: 28px 16px;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(1){
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt .jd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt .jd p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt .apply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.jobs-off-day .jobcard_main .jobcard .bottom-txt .apply p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #B4B4B4;
+    margin: 0;
+}
+
+.jobs-off-day .btn a{
+    display: inline-block;
+    margin-top: 42px;
+   
+
+}
+.jobs-off-day .btn a:hover{
+    background-color: #0080ff;
+
+color: #000000;
+
+}
+
+
+
+
+
+
+/* <!-- jobs-of day --end --> */
 
 
 
@@ -647,6 +785,35 @@ display: block;
         align-items: start;
         margin: 6px 0px;
     }
+    .jobs-off-day .jobcard_main .jobcard .top_heading {
+     
+        font-size: 12px;
+      
+    
+    
+    }
+  
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(1){
+        font-size: 16px;
+       
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(2){
+        font-size: 12px;
+       
+    }
+  
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .jd p{
+      font-size: 12px;
+    
+    }
+   
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .apply p{
+        font-size: 12px;
+      
+    }
+    .button_apply02{
+      font-size: 12px;
+    }
   
    
     
@@ -756,7 +923,35 @@ display: block;
        font-size: 10px;
     
     }
-
+    .jobs-off-day .jobcard_main .jobcard .top_heading {
+     
+        font-size: 12px;
+      
+    
+    
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(1){
+        font-size: 16px;
+       
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(2){
+        font-size: 12px;
+       
+    }
+  
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .jd p{
+      font-size: 12px;
+    
+    }
+   
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .apply p{
+        font-size: 12px;
+      
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .jd{
+       flex-direction: column;
+       align-items: start;
+    }
   
 }
 
@@ -804,6 +999,34 @@ display: block;
         font-size: 20px;
         
     
+    }
+    .jobs-off-day .jobcard_main .jobcard .top_heading {
+     
+        font-size: 12px;
+    
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(1){
+        font-size: 16px;
+       
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt p:nth-child(2){
+        font-size: 12px;
+       
+    }
+  
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .jd p{
+      font-size: 12px;
+    
+    }
+   
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .apply p{
+        font-size: 12px;
+      
+    }
+    .jobs-off-day .jobcard_main .jobcard .bottom-txt .apply{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
     }
   
 }
