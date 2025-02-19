@@ -63,7 +63,7 @@ nav{
     position: absolute;
     z-index: 1000;
     width: 100%;
-    padding-top: 75px;
+    padding-top: 40px;
 }
 
 
@@ -619,7 +619,7 @@ display: block;
 
 }
 
-@media (max-width: 595px) {
+@media (max-width: 575px) {
     .fliter{
 
         padding-top: 60px;
