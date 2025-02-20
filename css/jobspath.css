@@ -211,7 +211,7 @@ nav{
     background:linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/job.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     min-height: 570px;
     height: 100%;
     position: relative;
