@@ -351,6 +351,10 @@ padding: 5px 12px 5px 5px;
     font-size: 2.0rem;
     font-weight: 300;
 }
+.apply .first-part-main .first-part-card .row-3 .apply-btn a:hover{
+    background-color: #0080ff;
+color: #000000;
+}
 
 .apply .first-part-main .second-card{
     display: flex;
@@ -376,6 +380,10 @@ padding: 5px 12px 5px 5px;
 }
 .apply .first-part-main .second-card a{
     display: inline-block;
+}
+.apply .first-part-main .second-card a:hover{
+color: black;
+background-color:rgb(213, 210, 210);
 }
 
 .apply .second-part-main{
@@ -500,6 +508,11 @@ margin: 0;
     .apply .second-part-main .btn{
         margin-top: 28px;
     } 
+    .apply .second-part-main .view-similar .btn a:hover{
+        background-color: #0080ff;
+        color: #000000;
+
+    }
 
 
 /* -----------------------------------joblisting main  end----------------------*/

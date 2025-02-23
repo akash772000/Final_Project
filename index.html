@@ -16,7 +16,8 @@
 
 
     <!-- fabicon link -->
-
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- --------------------AoS---------- -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- ------------------------------------------------Font Awsome Cdn-------------------------------------------- -->
@@ -26,8 +27,11 @@
 </head>
 
 <body>
+    <!-- <section class="form"> -->
+    
+<!-- </section> -->
 
-    <header>
+     <header>
         <nav>
             <div class="upper_nav">
                 <div class="container">
@@ -81,9 +85,9 @@
                                 <li class="active hidebutton"><a href="index.html">Home</a></li>
                                 <li><a href="./jobspath.html" >Categories</a></li>
                                 <li><a href="./joblisting.html" >Jobs</a></li>
-                                <li><a href="#" >Blogs</a></li>
-                                <li><a href="#" >Sign in</a></li>
-                                <!-- <li class="toggler" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li> -->
+                                <li><a href="#blog" >Blogs</a></li>
+                                <li><a href="#" onclick="openModal_2()">Sign in</a></li>
+                                
                             </ul>
 
                             <ul class="slidebar">
@@ -91,8 +95,8 @@
                                 <li class="active"><a href="index.html">Home</a></li>
                                 <li><a href="./jobspath.html">Categories</a></li>
                                 <li><a href="./joblisting.html">Jobs</a></li>
-                                <li><a href="#">Blogs</a></li>
-                                <li ><a href="#">Sign in</a></li>
+                                <li><a href="#blog">Blogs</a></li>
+                                <li ><a href="#" onclick="openModal_2()">Sign in</a></li>
                             </ul>
 
                             
@@ -104,10 +108,77 @@
             </div>
         </nav>
 
-    </header>
+    </header> 
+
+   <section class="form-section">
+    <div class="container">
+        <div class="row">
+
+       
+        <div class="main-form" id="sigin">
+            <span class="close" onclick="closeModal()">&times;</span>
+                <figure>
+                    <img src="./images/Group 117 (1).png" alt="img">
+                </figure>
+            <div class="form">  
+                <h3>Sig in</h3>
+               <form onsubmit="return data()" action="#">
+                <input type="text" id="fname" name="name" placeholder="Name">
+                <p id="error1" class="error"></p>
+                <input type="email" id="email" name="email"  placeholder="Email">
+                <p id="error2" class="error"></p>
+                <input type="tel" id="phone" name="phone"  placeholder="Phone">
+                <p id="error3" class="error"></p>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <p id="error4" class="error"></p>
+                
+                <input type="submit" value="Submit" class="submit" onclick="showPopup()">
+
+                <div class="reset">
+                    <a class="reset" href="#">reset</a>
+                </div>
+               </form>
+            </div>
+        </div>
+
+
+        
+        <div class="main-form-2" id="sigin">
+            <span class="close" onclick="closeModal_2()">&times;</span>
+                <figure>
+                    <img src="./images/form2.png" alt="img">
+                </figure>
+            <div class="form">  
+                <h3>Welcom Back!</h3>
+                <p>Sig in</p>
+               <form onsubmit="return data1()" action="#">
+                <input type="text" id="fname1" name="name" placeholder="Name">
+                <p id="error01" class="error"></p>
+                <input type="email" id="email1" name="email"  placeholder="Email">
+                <p id="error02" class="error"></p>
+                <input type="tel" id="phone1" name="phone"  placeholder="Phone">
+                <p id="error03" class="error"></p>
+                <input type="password" id="password1" name="password" placeholder="Password">
+                <p id="error04" class="error"></p>
+                
+                <input type="submit" value="Continue" class="submit" onclick="showPopup()">
+
+                <div class="create">
+                    <p>Don't have an Account?<a href="#"onclick="openModal()">Create Now</a></p>
+                    
+                </div>
+               </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+   </section>
+
 
     <!-- Banner -->
-    <section class="banner">
+     <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="heading">
@@ -117,9 +188,6 @@
 
                 <div class="search-container">
                     <form action="#">
-
-
-
 
                         <div class="search-box">
                             <select  name="keywords">
@@ -152,18 +220,10 @@
                             </select>
 
                         </div>
-                       
-
-                        
+                    
                         <div class="btn">
                             <a href="#" class="button_apply01" >Apply</a>
                         </div>
-
-                       
-
-
-
-
 
 
                     </form>
@@ -171,7 +231,7 @@
             </div>
         </div>
 
-    </section>
+    </section> 
 <!-- Main-----------MNC---------------------- -->
     <main>
         <section class="mnc">
@@ -204,7 +264,7 @@
                     </div>
              
             </div>
-        </section>
+        </section> 
 
         <!-- ----------MNC END----------------------- -->
 
@@ -308,7 +368,7 @@
             </div>
         </section>
 
-<!-- jobs-of day -->
+<!-- ---------------------------------------------------------jobs-of day----------------------------------------- -->
 
         <section class="jobs-off-day common-padding">
             <div class="container">
@@ -354,7 +414,7 @@
                                 <p>Salary - 22000/mo</p>
                             </div>
                             <div class="apply">
-                                <a class="button_apply02" href="#">Apply</a>
+                                <a class="button_apply02" href="./apply.html">Apply</a>
                                 <p>12 days left to apply</p>
                             </div>
                         </div>   
@@ -374,7 +434,7 @@
                                 <p>Salary - 15000/mo</p>
                             </div>
                             <div class="apply">
-                                <a class="button_apply02" href="#">Apply</a>
+                                <a class="button_apply02" href="./apply.html">Apply</a>
                                 <p>12 days left to apply</p>
                             </div>
                         </div>   
@@ -394,7 +454,7 @@
                                 <p>Salary - 20000/mo</p>
                             </div>
                             <div class="apply">
-                                <a class="button_apply02" href="#">Apply</a>
+                                <a class="button_apply02" href="./apply.html">Apply</a>
                                 <p>20 days left to apply</p>
                             </div>
                         </div>   
@@ -414,7 +474,7 @@
                                 <p>Salary - 22000/mo</p>
                             </div>
                             <div class="apply">
-                                <a class="button_apply02" href="#">Apply</a>
+                                <a class="button_apply02" href="./apply.html">Apply</a>
                                 <p>12 days left to apply</p>
                             </div>
                         </div>   
@@ -435,28 +495,22 @@
                                 <p>Salary - 15000/mo</p>
                             </div>
                             <div class="apply">
-                                <a class="button_apply02" href="#">Apply</a>
+                                <a class="button_apply02" href="./apply.html">Apply</a>
                                 <p>12 days left to apply</p>
                             </div>
                         </div>   
-                    </div>
-
-
-
-                    
+                    </div>    
                 </div>
                 <div class="btn">
                     <a class="button_view_all" href="./joblisting.html">View All</a>
-
-                </div>
-
-                
+                </div>      
             </div>
             </div>
         </section>
+        <!-- ---------------------------------------------------------jobs-of day --  End----------------------------------------- -->
 
-<!-- Section-hiring -->
-        <section class="hiring common-padding">
+<!------------------------------------------------ Section-hiring------------------------------ -->
+         <section class="hiring common-padding">
             <div class="container">
                 <div class="row">
                     <h3>Featured Companies Actually Hiring</h3>
@@ -595,10 +649,10 @@
                 </div>
             </div>
 
-        </section>
-
-<!-- Upload-cv -->
-        <section class="upload-cv common-padding">
+        </section> 
+<!------------------------------------------------ --------------------------Section-hiring------------------------------ -->
+<!-- -------------------------------------------------------Upload-cv -------------------------------------->
+       <section class="upload-cv common-padding">
             <div class="container">
                 <div class="row">
                     <div class="box">
@@ -619,18 +673,163 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
-        <!-- Upload-cv-end -->
-         <!-- blog-start -->
+        <!-- ------------------------------------------Upload-cv-end ========================-->
 
-        <section class="blog common-padding">
+        <!-- ================================Swipper ====================-->
+         <section class="swipper common-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="box">
+                        <div class="txt">
+                            <p>FMCG Company</p>
+                            <p>340+ Actively Hiring</p>
+                        </div>
+                        <div class="img">
+                            <figure>
+                                <img src="./images/swip1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip2.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip-3.1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip4.png" alt="#">
+                            </figure>
+                        </div>
+                    </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="box">
+                        <div class="txt">
+                            <p>FMCG Company</p>
+                            <p>340+ Actively Hiring</p>
+                        </div>
+                        <div class="img">
+                            <figure>
+                                <img src="./images/swip1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip2.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip-3.1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip4.png" alt="#">
+                            </figure>
+                        </div>
+                    </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="box">
+                        <div class="txt">
+                            <p>FMCG Company</p>
+                            <p>340+ Actively Hiring</p>
+                        </div>
+                        <div class="img">
+                            <figure>
+                                <img src="./images/swip1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip2.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip-3.1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip4.png" alt="#">
+                            </figure>
+                        </div>
+                    </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="box">
+                        <div class="txt">
+                            <p>FMCG Company</p>
+                            <p>340+ Actively Hiring</p>
+                        </div>
+                        <div class="img">
+                            <figure>
+                                <img src="./images/swip1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip2.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip-3.1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip4.png" alt="#">
+                            </figure>
+                        </div>
+                    </div>
+                          </div>
+                          <!-- <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div> -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    <!-- <div class="box">
+                        <div class="txt">
+                            <p>FMCG Company</p>
+                            <p>340+ Actively Hiring</p>
+                        </div>
+                        <div class="img">
+                            <figure>
+                                <img src="./images/swip1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip2.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip-3.1.png" alt="#">
+                            </figure>
+
+                            <figure>
+                                <img src="./images/swip4.png" alt="#">
+                            </figure>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+         </section>
+
+        <!-- ============================Swiper end==================== -->
+         <!----------------------------------------------- blog-start---------- -->
+
+         <section class="blog common-padding" id="blog">
             <div class="container">
                 <div class="row">
                     <h3>Blogs</h3>
 
                     <div class="card-main">
-                        <div class="card card1">
+                        <div class="card card1" data-aos="flip-right"   data-aos-duration="3000">
                             <figure>
                                 <img src="./images/card1-1-3.png" alt="">
                             </figure>
@@ -646,7 +845,7 @@
                             </div>
                         </div>
 
-                        <div class="card card1">
+                        <div class="card card1" data-aos="flip-right"   data-aos-duration="3000">
                             <figure>
                                 <img src="./images/card-2.21.png" alt="">
                             </figure>
@@ -662,13 +861,13 @@
                             </div>
                         </div>
 
-                        <div class="card card1">
+                        <div class="card card1" data-aos="flip-right"   data-aos-duration="3000">
                             <figure>
                                 <img src="./images/card-3.png" alt="">
                             </figure>
 
                             <div class="txt">
-                                <p>How to apply jobs online</p>
+                                <p>How to crack an interview</p>
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical </p>
                                 <div class="txt-flex">
                                     <p>Coming</p>
@@ -681,13 +880,13 @@
                 </div>
             </div>
 
-        </section>
+        </section> 
 
         <!-- blog-end -->
     </main>
 
      <!-- footer start -->
-     <footer>
+   <footer>
         <div class="top">
         <div class="container">
             <div class="row">
@@ -730,14 +929,40 @@
         <div class="lower-footer">
             <p>&copy;Copyright 2024 A Job. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> 
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
     <script>
         AOS.init();
       </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    // spaceBetween: ,
+    // BeforeUnloadEvent:1.5,
+    slidesPerView:1,
+    speed:2000,
+    // centeredSlides: true,
+    autoplay: {
+    pauseOnMouseEnter:true,
+      delay: 2500,
+      disableOnInteraction: false,
+    //   slidesPerView:3,
+      loop:true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
-
 </html>

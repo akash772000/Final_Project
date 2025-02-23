@@ -14,6 +14,7 @@
 html,body{
     overflow-x: hidden;
     overflow-y: auto;
+   
  }
 
 html{
@@ -115,7 +116,8 @@ a{
 ul{
     list-style: none;
 }
-section,.row{
+section,
+.row{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,6 +128,7 @@ section,.row{
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    /* border: 10px solid green; */
 }
 .common-padding{
     padding:100px 0;
@@ -137,9 +140,12 @@ section,.row{
 
 
 /*-------------------------------------------------------- common css end -----------------------------*/
+
+
+
 /* ----------------------UpperNavbar -------------*/
 nav{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     z-index: 100;
 }
@@ -201,7 +207,9 @@ nav{
 /* bottom _navbar */
 .bottom_navbar{
     padding-top: 32px;
-   
+    position: absolute;
+    z-index: 100;
+    width: 100%;
 }
 
 .bottom_navbar_main{
@@ -242,8 +250,6 @@ nav{
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease-in-out;
- 
-
 
 }
 .bottom_navbar_main .navlist .mainmenu  li a::after {
@@ -347,6 +353,331 @@ nav{
     border: 1px solid black;
 
 }
+
+
+
+/* form */
+.form{
+  
+}
+.main-form{
+            
+    max-width: 1250px;
+    width: 70%;
+   
+    max-height: 747px;
+    height: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    /* border: 5px solid red; */
+    /* margin:10% auto; */
+    margin-top: 10%;
+    position: fixed; 
+     z-index: 2000;
+     top: 5%;
+ 
+    
+    display: none;
+}
+.main-form .close:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 0%;
+    /*left: 96%;
+    */right: 0%;
+    /*border: 1px solid black;
+    */
+    border-bottom-left-radius:10px;
+    font-size: 3.0rem;
+    padding: 0px 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+   
+}
+.main-form figure{
+    max-width: 710px;
+    width: 50%;
+
+}
+
+.main-form .form{
+    max-width: 710px;
+    width: 50%;
+    padding:20px;
+    text-align: center;
+    background-color: #f7f6f6;
+    overflow: scroll;
+    
+ 
+    
+    
+}
+.main-form .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    padding:10%;
+    width: 100%;
+}
+.main-form .form form input{
+    /* margin-bottom: 15px; */
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #E4F1FF;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 50px;
+    
+    
+}
+.main-form .form  form input:nth-child(7){
+    margin: 0;
+  }
+  .main-form .form form input::placeholder{
+      color: #84C1FF;
+      /* font-size: 14px; */
+      font-size: 1.4;
+      font-weight: 400;
+     
+    
+  }
+  .main-form .form  h3{
+      /* font-size: 25px; */
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+  }
+  .main-form .form  form .submit{
+      /* border: 1px solid black; */
+       width: 100%;
+       display: inline-block;
+       border-radius: 50px;
+       padding: 10px;
+       color: #BFBFBF;
+       /* font-size: 25px; */
+       font-size: 2.5rem;
+      font-weight: 600;
+      margin-top: 30px;
+      background-color: #f4f4f4;
+  }
+  .main-form .form  form .submit:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+  }
+  .main-form .form  form .reset:hover{
+    color: black;
+  }
+
+  .main-form .form form .reset{
+      display: flex;
+     width: 85%;
+     justify-content: flex-end;
+     margin-top:16px;
+  
+  }
+  .main-form .form form .reset a{
+      text-decoration: none;
+      /* font-size: 15px; */
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #84C1FF;
+      text-transform: capitalize;
+  }
+  .main-form .form p{
+    color: red;
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin:5px 0 ;
+    width: 100%;
+  }
+
+  
+
+
+  .main-form-2{
+            
+    max-width: 1250px;
+    width: 70%;
+   
+    max-height: 747px;
+    height: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    /* border: 5px solid red; */
+    /* margin:10% auto; */
+    margin-top: 10%;
+    position: fixed; 
+     z-index: 2000;
+     top: 5%;
+ 
+    
+    display: none;
+}
+.main-form-2 .close:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 0%;
+    /*left: 96%;
+    */right: 0%;
+    /*border: 1px solid black;
+    */
+    border-bottom-left-radius:10px;
+    font-size: 3.0rem;
+    padding: 0px 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+   
+}
+.main-form-2 figure{
+    max-width: 710px;
+    width: 50%;
+
+}
+
+.main-form-2 .form{
+    max-width: 710px;
+    width: 50%;
+    padding:20px;
+    text-align: center;
+    background-color: #f7f6f6;
+    overflow: scroll;
+    
+ 
+    
+    
+}
+.main-form-2 .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    padding:10%;
+    width: 100%;
+}
+.main-form-2 .form form input{
+    /* margin-bottom: 15px; */
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #E4F1FF;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 50px;
+    
+    
+}
+.main-form-2 .form  form input:nth-child(7){
+    margin: 0;
+  }
+  .main-form-2 .form form input::placeholder{
+      color: #84C1FF;
+      /* font-size: 14px; */
+      font-size: 1.4;
+      font-weight: 400;
+     
+    
+  }
+  .main-form-2 .form  h3{
+      /* font-size: 25px; */
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+  }
+  .main-form-2 .form  form .submit{
+      /* border: 1px solid black; */
+       width: 100%;
+       display: inline-block;
+       border-radius: 50px;
+       padding: 10px;
+       color: #BFBFBF;
+       /* font-size: 25px; */
+       font-size: 2.5rem;
+      font-weight: 600;
+      margin-top: 30px;
+      background-color: #f4f4f4;
+  }
+  .main-form-2 .form  form .submit:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+  }
+  .main-form-2 .form  form .reset:hover{
+    color: black;
+  }
+
+  .main-form-2 .form form .reset{
+      display: flex;
+     width: 85%;
+     justify-content: flex-end;
+     margin-top:16px;
+  
+  }
+  .main-form-2 .form form .reset a{
+      text-decoration: none;
+      /* font-size: 15px; */
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #84C1FF;
+      text-transform: capitalize;
+  }
+  
+  .main-form-2 .form p:nth-child(2)
+  {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+  }
+  .main-form-2 .form form{
+    background: none;
+  }
+  .main-form-2 .form form .create p{
+    font-size: 1.5rem;
+    /* color: black; */
+    
+  }
+  .main-form-2 .form form .create p a{
+    color: var(--primary-color);
+    margin: 0 5px;
+  }
+  .main-form-2 .form form .error{
+    color: red;
+    /* border: 1px solid black; */
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin:5px 0 ;
+    width: 100%;
+  }
+  .main-form-2 .form form .create p a:hover{
+    cursor: pointer;
+    color: black;
+
+  }
+
+  
+
+
+
+/* form */
  
 
 /* banner */
@@ -354,17 +685,20 @@ nav{
     background-image: url("../images/banner.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 100vh;
+    background-size: cover;
+    /* height: 100vh; */
+    min-height: 800px;
+    height: 100%;
     position: relative;
-    z-index: 1;
-    padding-top: 40%;
-    padding-bottom: 20%;
+    /* z-index: 1; */
+    /* padding-top: 10%; */
+    /* padding-bottom: 20%; */
 
 }
 .banner .heading{
     width: 60%;
     text-align: center;
+    padding-top: 10%;
 }
 .banner .heading  h1 span{
     color: var(--primary-color);
@@ -775,6 +1109,17 @@ color: #000000;
     margin-left: 5px;
  
 }
+.hiring .card-img-main .card-img .card-body a:hover
+{
+background-color: #0080ff;
+color: #000000;
+
+}
+.hiring .btn a:hover{
+background-color: #0080ff;
+color: #000000;
+
+}
 .hiring .card-img-main .card-img .card-body .star i{
     color: rgb(233, 214, 1);
 }
@@ -793,6 +1138,8 @@ color: #000000;
     display: inline-block
 }
 
+
+
 /* section hiring end */
 
 /* upload-cv */
@@ -807,8 +1154,8 @@ color: #000000;
     position: relative;
     max-width: 1054px;
     width: 100%;
-    /*border: 1px solid black;
-    */padding: 35px 94px;
+    /*border: 1px solid black;*/
+    padding: 35px 94px;
     background-color: white;
     gap: 30px;
     border-radius: 25px;
@@ -856,7 +1203,60 @@ color: #000000;
 .upload-cv .box .btn a{
     display: inline-block;
 }
+.upload-cv .box .btn a:hover{
+    background-color: #0080ff;
+    color: #000000;
+    
+    }
 /* upload-cv end */
+
+
+/* Swiper */
+.swipper{
+ background-color: #f7f6f6; ;
+}
+.swipper .box{
+    max-width: 735px;
+    width: 100%;
+    padding: 55px 65px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    box-shadow: 0px 0px 38px 0px var(--primary-color);
+    background-color: white;
+    border-radius:15px ;
+    -webkit-border-radius:15px ;
+    -moz-border-radius:15px ;
+    -ms-border-radius:15px ;
+    -o-border-radius:15px ;
+}
+.box .txt{
+    margin-bottom: 20px;
+}
+.box .txt p:nth-child(1)
+{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.box .txt p:nth-child(2){
+    margin-top: 6px;
+    font-size:2.2rem;
+    color:#959595;
+
+}
+.box .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* width: 100%; */
+}
+
+
+/* swiper-end */
 
 /* Blog */
 .blog{
@@ -1080,6 +1480,39 @@ footer{
 
 
 /* footer-end */
+
+
+/* sipper css */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-wrapper{
+    padding: 50px 0 !important;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 5.0rem;
+ }
+ .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 5.0rem;
+ }
 /* Responsive*/
 
 
@@ -1089,8 +1522,8 @@ footer{
     font-size: 58%;
    }
    .banner{
-    padding-top: 45%;
-    padding-bottom: 25%;
+    /* padding-top: 45%; */
+    /* padding-bottom: 25%; */
 }
    .banner .heading{
     width: 70%;
@@ -1105,39 +1538,35 @@ footer{
 }
 .upper_footer .middle_part ul li a{
     font-size: 16.4px;
-     
-   }
-   .upper_footer .middle_part  .call a, .upper_footer .middle_part  .email a{
+  
+}
+.upper_footer .middle_part  .call a, .upper_footer .middle_part  .email a{
     font-size: 16.4px;
     
-  }
-  footer .lower-footer p{
-     
+}
+footer .lower-footer p{
+     font-size: 16.4px;
+} 
+.rightpart input::placeholder{  
     font-size: 16.4px;
-    } 
-    .rightpart input::placeholder{
-       
-        font-size: 16.4px;
     
-    
-     } 
+} 
+
 
 }
 
 
 @media (max-width: 991px) {
     .banner{
-        padding-top: 50%;
-        padding-bottom: 50%;
-    }
-
-    html{
-        font-size: 50%;
-       }
+        /* padding-top: 50%; */
+        /* padding-bottom: 50%; */}
+html{
+        font-size: 55%;
+}
   
-       .bottom_navbar_main .navlist .mainmenu{
+.bottom_navbar_main .navlist .mainmenu{
         display: none;
-       }
+} 
 .bottom_navbar_main .logo_all{
 
 width: 100%;
@@ -1147,7 +1576,7 @@ width: 100%;
 display: block;
 }
 .banner .heading{
-  margin-top: 20%;
+  /* margin-top: 20%; */
   width: 80%;
 }
 .banner .heading p{
@@ -1156,30 +1585,20 @@ display: block;
 }
 .banner .search-container{
     margin-top: 40px;
+}  
+.banner .search-container form .search-box{
+    width: 45%;
 }
-
-
-
-    
-   
-    .banner .search-container form .search-box{
-       
-        width: 45%;
-    
-    }
-    .banner .search-container form .btn{
-       
-        width: 45%;
-    
-    }
-    .button_view_all{
-        padding: 14px 28px;
-     
-    }
-    .common-padding{
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+.banner .search-container form .btn{
+    width: 45%;
+}
+.button_view_all{
+    padding: 14px 28px;
+}
+.common-padding{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
   
     
     .upload-cv .box  figure{
@@ -1234,23 +1653,89 @@ display: block;
         
         
          } 
-   
+         .main-form .form{
+          padding: 5%;
+            
+            
+        }
+        .main-form{
+            
+            max-width: 1000px;
+            width: 80%;
+           
+            max-height: 747px;
+            height: 70%; 
+          
+             top: 8%;
+         
+         
+            /* display: none; */
+        }
+        .main-form .form form input{
+            /* margin-bottom: 20px; */
+           
+            padding: 15px;
+          
+            
+            
+        }
+
+
+
+
+        .main-form-2 .form{
+            padding: 5%;
+              
+              
+          }
+          .main-form-2{
+              
+              max-width: 1000px;
+              width: 80%;
+             
+              max-height: 747px;
+              height: 70%; 
+            
+               top: 8%;
+           
+           
+              /* display: none; */
+          }
+          .main-form-2 .form form input{
+              /* margin-bottom: 20px; */
+             
+              padding: 15px;
+            
+              
+              
+          }
+          /*==========================================swiper=========================*/
+          .swipper .box{
+            max-width: 735px;
+            width: 80%;
+            padding: 45px 55px;
+           
+        }
+        .swiper-button-next,.swiper-button-prev{
+            width:10%; 
+        }
+       
 }
 
 
 @media (max-width: 767px) {
     .banner{
-        padding-top: 50%;
-        padding-bottom: 50%;
+        /* padding-top: 50%; */
+        /* padding-bottom: 50%; */
       
     }
     html{
-        font-size: 38%;
+        font-size: 50%;
     }
    
     .banner .heading{
-        margin-top: 40%;
-        width: 90%;
+        /* margin-top: 40%; */
+        width: 100%;
       }
       .banner .heading p{
           margin-top: 38px;
@@ -1307,10 +1792,6 @@ display: block;
     .button_apply02{
       font-size: 12px;
     }
-  
-   
-    
-   
     .button_view_all{
         padding: 12px 20px;
         font-size: 17px;
@@ -1369,15 +1850,7 @@ display: block;
 {
    
     line-height: 38px;
-}
-
-
-
-
-
-
-   
-   
+} 
 .upper_footer .middle_part .call {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -1428,22 +1901,81 @@ display: block;
   
    
 }
+.main-form{
+            
+    max-width: 1000px;
+    width: 90%;
+   
+    max-height: 747px;
+    height: 70%; 
+  
+     top: 10%;
+ 
+ 
+    /* display: none; */
+}
+.main-form .form form input{
+    margin-bottom: 15px;
+   
+    padding: 10px;
+  
+    
+    
+}
+.main-form .form form{
+   
+    padding:2%;
+   
+}
+
+
+.main-form-2{
+            
+    max-width: 1000px;
+    width: 90%;
+   
+    max-height: 747px;
+    height: 70%; 
+  
+     top: 10%;
+ 
+ 
+    /* display: none; */
+}
+.main-form-2 .form form input{
+    margin-bottom: 15px;
+   
+    padding: 10px;
+  
+    
+    
+}
+.main-form-2 .form form{
+   
+    padding:2%;
+   
+}
+.swiper-button-next,.swiper-button-prev{
+    width:7%; 
+}
+
+
    
 }
 
 
 @media (max-width: 575px) {
     .banner{
-        padding-top: 70%;
-        padding-bottom: 85%;
+        /* padding-top: 70%; */
+        /* padding-bottom: 85%; */
     }
    
     html{
-        font-size: 26%;
+        font-size: 45%;
     }
     .banner .heading{
-        margin-top: 60%;
-        width: 60%;
+        /* margin-top: 60%; */
+        width: 100%;
       }
       .banner .heading p{
           margin-top: 28px;
@@ -1606,7 +2138,7 @@ display: block;
     padding: 10px;
   
   }
-  .upper_footer .middle_part ul li a{
+  /* .upper_footer .middle_part ul li a{
    font-size: 12.5px;
     
   }
@@ -1617,7 +2149,7 @@ display: block;
  footer .lower-footer p{
     
     font-size:12.5px
-   }
+   } */
    .rightpart input::placeholder{
        
     font-size: 12.5px;
@@ -1630,28 +2162,146 @@ display: block;
     .blog .card-main .card .txt-flex{
         flex-direction: column;
     }
+    .main-form{
+            
+        max-width: 1000px;
+        width: 75%;
+       
+        max-height: 747px;
+        height: 80%; 
+    
+     
+        /* display: none; */
+    }
+   
+    .main-form .form{
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+        background: none;
+       
+    }
+    .main-form .form form{
+        background: none;
+    }
+
+    .main-form figure{
+       z-index: 100;
+       opacity: 1;
+       width: 100%;
+    }
+    .main-form .form form input{
+        margin-bottom: 20px;
+       
+        padding: 5px;
+      
+        
+        
+    }
+    .main-form .form  form a:nth-child(5){
+        /* border: 1px solid black; */
+         width: 80%;
+     
+         padding: 5px;
+       
+       font-size: 15px;
+        margin-top: 20px;
+     
+    }
+    .main-form .form form input::placeholder{
+    text-align: center;
+       
+      
 
 
   
 }
+.close{
+
+    z-index: 300;
+  
+   
+}
+.main-form .form h3{
+    color: white;
+    font-size: 17px;
+}
+.main-form-2 .form h3{
+    color: black;
+    font-size: 17px;
+}
+
+
+.main-form-2{
+            
+    max-width: 1000px;
+    width: 75%;
+   
+    max-height: 747px;
+    height: 80%; 
+
+ 
+    /* display: none; */
+}
+
+.main-form-2 .form{
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    background: none;
+   
+}
+.main-form-2 .form form{
+    background: none;
+}
+
+.main-form-2 figure{
+   z-index: 100;
+   opacity: 1;
+   width: 100%;
+}
+.main-form-2 .form form input{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    
+  
+    
+    
+}
+.main-form-2 .form  form a:nth-child(5){
+    /* border: 1px solid black; */
+     width: 80%;
+ 
+     padding: 5px;
+   
+   font-size: 15px;
+    margin-top: 20px;
+ 
+}
+.main-form-2 .form form input::placeholder{
+text-align: center;
+color: #000000; 
+
+}
+
+.swiper-button-next,.swiper-button-prev{
+    width:5%; 
+}
+}
 
 
 @media (max-width: 320px) {
-    .banner{
-        padding-top: 100%;
-        padding-bottom: 100%;
-    }
-   
     html{
-        font-size: 30%;
+        font-size: 35%;
     }
     .banner .heading{
-        margin-top: 90%;
+        /* margin-top: 90%; */
         width: 100%;
       }
       .banner .search-container{
         padding: 10px;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
     .bottom_navbar_main .navlist .slidebar li a{
         font-size: 12px;
