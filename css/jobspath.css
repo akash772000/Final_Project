@@ -206,6 +206,7 @@ nav{
 
 }
 
+
 /* --------------------------banner----------------------- */
 .banner{
     background:linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/job.png');
@@ -292,6 +293,10 @@ nav{
     padding: 50px 0;
     width: 100%;
     gap:38px;
+}
+.path-main .card:hover{
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 30px 0px var(--primary-color);
 }
 
 .path-main .card{
@@ -510,6 +515,11 @@ footer{
   font-weight: 500;
 
  }
+ footer .lower-footer p a{
+    color: white;
+  
+  
+   }
 
 
 
